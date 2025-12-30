@@ -1,0 +1,1062 @@
+/**
+ * Custom Schema by BASEO - Admin Styles
+ * Version: 1.0.1
+ * Author: BASEO Team
+ */
+
+/* ========================================
+   CSS Variables & Root Styles
+   ======================================== */
+:root {
+    --baseo-primary: #FF6B35;
+    --baseo-secondary: #004E98;
+    --baseo-light: #f8f9ff;
+    --baseo-border: #e1e5e9;
+    --baseo-text: #2c3e50;
+    --baseo-success: #27ae60;
+    --baseo-warning: #f39c12;
+    --baseo-error: #e74c3c;
+    --baseo-gradient: linear-gradient(135deg, var(--baseo-primary) 0%, var(--baseo-secondary) 100%);
+    --baseo-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    --baseo-shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+/* ========================================
+   Main Container
+   ======================================== */
+.baseo-schema-wrap {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    max-width: none;
+    margin: 0;
+    background: #fafbfc;
+}
+
+/* ========================================
+   Header Styles
+   ======================================== */
+.baseo-header {
+    background: var(--baseo-gradient);
+    color: white;
+    padding: 40px 30px;
+    margin: -10px -20px 30px -22px;
+    box-shadow: var(--baseo-shadow);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.baseo-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.baseo-logo-section h1 {
+    font-size: 2.8em;
+    margin: 0 0 12px 0;
+    font-weight: 200;
+    letter-spacing: -0.5px;
+}
+
+.baseo-logo {
+    font-size: 1.1em;
+    margin-right: 12px;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+}
+
+.baseo-title {
+    font-weight: 300;
+    color: white;
+}
+
+.baseo-by {
+    font-size: 0.6em;
+    opacity: 0.8;
+    margin: 0 12px;
+    font-weight: 300;
+}
+
+.baseo-brand {
+    font-weight: 700;
+    color: #FFD700;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+}
+
+.baseo-subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.baseo-header-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* ========================================
+   Button Styles
+   ======================================== */
+.baseo-btn {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+.baseo-btn-docs {
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border: 2px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+}
+
+.baseo-btn-support {
+    background: rgba(255,255,255,0.95);
+    color: var(--baseo-primary);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.baseo-btn-brand {
+    background: #FFD700;
+    color: var(--baseo-secondary);
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+}
+
+.baseo-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--baseo-shadow-hover);
+}
+
+.baseo-btn-primary {
+    background: var(--baseo-gradient);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 32px;
+    box-shadow: var(--baseo-shadow);
+}
+
+.baseo-btn-secondary {
+    background: var(--baseo-secondary);
+    color: white;
+    padding: 16px 28px;
+    box-shadow: 0 4px 12px rgba(0, 78, 152, 0.2);
+}
+
+.baseo-btn-warning {
+    background: linear-gradient(135deg, var(--baseo-warning) 0%, #e67e22 100%);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 32px;
+    box-shadow: 0 4px 12px rgba(243, 156, 18, 0.3);
+}
+
+.baseo-btn-warning:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(243, 156, 18, 0.4);
+}
+
+.baseo-btn-small {
+    padding: 6px 12px;
+    font-size: 11px;
+    background: rgba(255,255,255,0.95);
+    border: 1px solid var(--baseo-border);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+}
+
+.baseo-btn-small:hover {
+    background: var(--baseo-primary);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.baseo-btn-micro {
+    padding: 8px 16px;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.baseo-btn-micro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ========================================
+   Main Content Layout
+   ======================================== */
+.baseo-main-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.baseo-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* ========================================
+   Panel Styles
+   ======================================== */
+.baseo-panel {
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--baseo-shadow);
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.8);
+    backdrop-filter: blur(20px);
+}
+
+.baseo-panel-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 30px;
+    border-bottom: 1px solid var(--baseo-border);
+}
+
+.baseo-panel-header h2 {
+    margin: 0 0 10px 0;
+    color: var(--baseo-text);
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+.baseo-panel-header p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ========================================
+   Form Styles
+   ======================================== */
+.baseo-form {
+    padding: 35px;
+}
+
+.baseo-form-group {
+    margin-bottom: 30px;
+}
+
+.baseo-label {
+    display: block;
+    font-weight: 600;
+    color: var(--baseo-text);
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+
+.baseo-required {
+    color: var(--baseo-error);
+    font-weight: 700;
+}
+
+.baseo-input, .baseo-select, .baseo-textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid var(--baseo-border);
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+}
+
+.baseo-input:focus, .baseo-select:focus, .baseo-textarea:focus {
+    outline: none;
+    border-color: var(--baseo-primary);
+    box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.1);
+    background: white;
+}
+
+.baseo-textarea-container {
+    position: relative;
+}
+
+.baseo-textarea {
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    resize: vertical;
+    min-height: 200px;
+}
+
+.baseo-textarea-tools {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+}
+
+.baseo-help-text {
+    font-size: 13px;
+    color: #6c757d;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+.baseo-form-actions {
+    display: flex;
+    gap: 18px;
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #f0f2f5;
+}
+
+/* ========================================
+   Filter and Pagination Styles
+   ======================================== */
+.baseo-filters-row {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e1e5e9;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.baseo-filters-row label {
+    font-weight: 600;
+    color: var(--baseo-text);
+    margin: 0;
+    white-space: nowrap;
+}
+
+.baseo-filters-row .baseo-select {
+    padding: 10px 16px;
+    margin: 0;
+}
+
+.baseo-pagination {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e1e5e9;
+    background: #fafbfc;
+}
+
+.baseo-page-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    background: white;
+    border: 1px solid var(--baseo-border);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin: 0 5px;
+}
+
+.baseo-page-btn:hover {
+    background: var(--baseo-primary);
+    color: white;
+    border-color: var(--baseo-primary);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.2);
+}
+
+.baseo-page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.baseo-pagination span {
+    color: #6c757d;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+/* ========================================
+   Schema List Styles
+   ======================================== */
+.baseo-url-group {
+    margin-bottom: 20px;
+    border: 1px solid #e8ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+}
+
+.baseo-url-group:hover {
+    box-shadow: var(--baseo-shadow);
+    transform: translateY(-2px);
+}
+
+.baseo-url-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 20px 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f2f5;
+    transition: all 0.3s ease;
+}
+
+.baseo-url-header:hover {
+    background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+}
+
+.baseo-url-header.expanded {
+    background: linear-gradient(135deg, var(--baseo-light) 0%, #e3f2fd 100%);
+}
+
+.baseo-url-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.baseo-toggle-icon {
+    font-size: 14px;
+    color: var(--baseo-primary);
+    transition: transform 0.3s ease;
+    font-weight: 600;
+}
+
+.baseo-url-title {
+    font-weight: 500;
+    color: var(--baseo-text);
+    font-size: 15px;
+    word-break: break-all;
+    font-family: 'SF Mono', 'Monaco', monospace;
+    background: rgba(0,0,0,0.05);
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.baseo-url-stats {
+    background: var(--baseo-gradient);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.baseo-url-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.baseo-add-to-url {
+    background: var(--baseo-success);
+    color: white;
+    box-shadow: 0 2px 6px rgba(39, 174, 96, 0.2);
+}
+
+.baseo-add-to-url:hover {
+    background: #219a52;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.baseo-visit-url {
+    background: var(--baseo-secondary);
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 78, 152, 0.2);
+}
+
+.baseo-visit-url:hover {
+    background: #003d7a;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 78, 152, 0.3);
+}
+
+.baseo-url-content {
+    padding: 0;
+    background: #fafbfc;
+}
+
+/* ========================================
+   Schema Item Styles
+   ======================================== */
+.baseo-schema-item {
+    border-bottom: 1px solid #f0f2f5;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.baseo-schema-item:last-child {
+    border-bottom: none;
+}
+
+.baseo-schema-item.baseo-active {
+    border-left: 4px solid var(--baseo-success);
+}
+
+.baseo-schema-item.baseo-inactive {
+    border-left: 4px solid #95a5a6;
+    opacity: 0.7;
+}
+
+.baseo-schema-item:hover {
+    background: #f8f9fa;
+}
+
+.baseo-schema-header {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.baseo-schema-info {
+    flex: 1;
+}
+
+.baseo-schema-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.baseo-schema-name:hover .baseo-name-text {
+    color: var(--baseo-primary);
+}
+
+.baseo-status-icon {
+    font-size: 18px;
+}
+
+.baseo-name-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--baseo-text);
+    transition: color 0.2s ease;
+    flex: 1;
+}
+
+.baseo-schema-meta {
+    display: flex;
+    gap: 18px;
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.baseo-schema-type {
+    font-weight: 500;
+    background: rgba(0,0,0,0.05);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.baseo-schema-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.baseo-edit-schema {
+    background: #3498db;
+    color: white;
+}
+
+.baseo-toggle-schema {
+    background: #f39c12;
+    color: white;
+}
+
+.baseo-delete-schema {
+    background: #e74c3c;
+    color: white;
+}
+
+/* ========================================
+   Schema Preview
+   ======================================== */
+.baseo-schema-preview-container {
+    padding: 0 25px 25px 25px;
+    background: white;
+}
+
+.baseo-schema-preview {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 12px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.baseo-schema-preview pre {
+    margin: 0;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    line-height: 1.5;
+    color: #2c3e50;
+}
+
+.baseo-preview-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: flex-end;
+}
+
+.baseo-test-schema {
+    background: #9b59b6;
+    color: white;
+}
+
+.baseo-copy-schema {
+    background: #34495e;
+    color: white;
+}
+
+/* ========================================
+   Empty State
+   ======================================== */
+.baseo-empty-state {
+    text-align: center;
+    padding: 80px 20px;
+    color: #6c757d;
+}
+
+.baseo-empty-state p {
+    font-size: 18px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* ========================================
+   Notification Styles
+   ======================================== */
+.baseo-notification {
+    position: fixed;
+    top: 60px;
+    right: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--baseo-shadow-hover);
+    padding: 18px 24px;
+    z-index: 999999;
+    transform: translateX(400px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 350px;
+    border-left: 4px solid #ddd;
+}
+
+.baseo-notification.show {
+    transform: translateX(0);
+}
+
+.baseo-notification.baseo-success {
+    border-left-color: var(--baseo-success);
+    background: linear-gradient(135deg, #d5f4e6 0%, #ffffff 100%);
+}
+
+.baseo-notification.baseo-error {
+    border-left-color: var(--baseo-error);
+    background: linear-gradient(135deg, #ffeaea 0%, #ffffff 100%);
+}
+
+.baseo-notification.baseo-warning {
+    border-left-color: var(--baseo-warning);
+    background: linear-gradient(135deg, #fff3cd 0%, #ffffff 100%);
+}
+
+.baseo-notification.baseo-info {
+    border-left-color: #3498db;
+    background: linear-gradient(135deg, #d6eaf8 0%, #ffffff 100%);
+}
+
+/* ========================================
+   Loading Spinner
+   ======================================== */
+.baseo-loading {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.baseo-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--baseo-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ========================================
+   Footer Styles
+   ======================================== */
+.baseo-footer {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-top: 1px solid var(--baseo-border);
+    padding: 25px 20px;
+    margin: 50px -20px -10px -22px;
+    text-align: center;
+}
+
+.baseo-footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.baseo-footer a {
+    color: var(--baseo-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ========================================
+   Welcome Notice
+   ======================================== */
+.baseo-welcome-notice {
+    border-left: 4px solid var(--baseo-primary) !important;
+    background: linear-gradient(135deg, #fff5f2 0%, #ffffff 100%);
+}
+
+.baseo-welcome-notice h3 {
+    color: var(--baseo-primary);
+    font-weight: 600;
+}
+
+/* ========================================
+   Dashboard Statistics
+   ======================================== */
+.baseo-dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin: 30px 0 40px;
+    padding: 0 20px;
+}
+
+.baseo-stat-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    border-top: 4px solid var(--baseo-primary);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.baseo-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.baseo-stat-number {
+    font-size: 3.2em;
+    font-weight: 700;
+    color: var(--baseo-primary);
+    line-height: 1;
+    margin-bottom: 12px;
+    background: var(--baseo-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.baseo-stat-label {
+    color: #6c757d;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+}
+
+/* ========================================
+   Meta Box Styles
+   ======================================== */
+.baseo-meta-box code {
+    background: #f1f1f1;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 11px;
+    word-break: break-all;
+}
+
+.baseo-meta-box textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.baseo-meta-box .button-small {
+    font-size: 11px;
+    height: auto;
+    padding: 4px 8px;
+    line-height: 1.2;
+}
+
+/* ========================================
+   Frontend Editor Styles
+   ======================================== */
+.baseo-frontend-editor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+}
+
+.baseo-editor-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(10px);
+}
+
+.baseo-editor-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 700px;
+    max-height: 85vh;
+    overflow: hidden;
+}
+
+.baseo-editor-header {
+    background: linear-gradient(135deg, var(--baseo-primary) 0%, var(--baseo-secondary) 100%);
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.baseo-editor-header h3 {
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.baseo-close-btn {
+    background: rgba(255,255,255,0.15);
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+}
+
+.baseo-close-btn:hover {
+    background: rgba(255,255,255,0.25);
+    transform: scale(1.1);
+}
+
+.baseo-editor-content {
+    padding: 30px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.baseo-editor-info {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.baseo-editor-info code {
+    background: #e9ecef;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    word-break: break-all;
+}
+
+.baseo-existing-list {
+    margin-top: 15px;
+}
+
+.baseo-existing-list h4 {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #495057;
+}
+
+.baseo-field {
+    margin-bottom: 25px;
+}
+
+.baseo-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.baseo-field input,
+.baseo-field select,
+.baseo-field textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.baseo-field input:focus,
+.baseo-field select:focus,
+.baseo-field textarea:focus {
+    outline: none;
+    border-color: var(--baseo-primary);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.baseo-field textarea {
+    font-family: 'SF Mono', Monaco, Consolas, monospace;
+    font-size: 12px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.baseo-editor-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e1e5e9;
+}
+
+.baseo-editor-actions .baseo-btn-primary {
+    background: linear-gradient(135deg, var(--baseo-primary) 0%, var(--baseo-secondary) 100%);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.baseo-editor-actions .baseo-btn-secondary {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.baseo-editor-actions .baseo-btn-primary:hover,
+.baseo-editor-actions .baseo-btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 1200px) {
+    .baseo-content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .baseo-header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    .baseo-footer-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .baseo-url-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .baseo-schema-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .baseo-editor-modal {
+        width: 95%;
+        max-height: 90vh;
+    }
+    
+    .baseo-editor-content {
+        padding: 20px;
+    }
+    
+    .baseo-editor-actions {
+        flex-direction: column;
+    }
+    
+    .baseo-filters-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .baseo-filters-row .baseo-select {
+        width: 100%;
+    }
+}
